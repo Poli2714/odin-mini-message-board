@@ -1,0 +1,8 @@
+<%- include('../partials/head', { title: title }); %>
+  <body>
+    <h1 class="new-page-title">Message</h1>
+    <a class="nav-link message-board-link" href="/">Message board</a>
+    <%- include('../partials/message-item-card', { message: message }); %>
+    <%- include('../partials/footer', { footerText: footerText }); %>
+  </body>
+</html>

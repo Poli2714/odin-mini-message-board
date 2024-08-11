@@ -1,0 +1,15 @@
+<%- include('../partials/head', { title: title }); %>
+  <body>
+    <h1 class="main-page-heading">Message Board</h1>
+    <a class="nav-link" href="/new">Add new message</a>
+    <ul class="message-list">
+      <% messages.forEach((message, i) => { %>
+        <li>
+          <%- include('../partials/message-item-card', { message: message}); %>
+          <a class="details-link" href="/message/<%= i + 1 %>">Details</a>
+        </li>
+      <% }) %>
+    </ul>
+    <%- include('../partials/footer', { footerText: footerText }); %>
+  </body>
+</html>

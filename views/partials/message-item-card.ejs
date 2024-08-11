@@ -1,0 +1,5 @@
+<div class="message-item-card ">
+  <p><span>Message:</span> <%= message.text %></p>
+  <p><span>Added by:</span> <%= message.user %></p>
+  <p><span>Created at:</span> <%= new Intl.DateTimeFormat('en-us', { year: 'numeric', month: 'long', day: 'numeric' }).format(message.added) %></p>
+</div>
